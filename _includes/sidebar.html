@@ -10,8 +10,8 @@
     <h4>设备平台</h4>
     <div class="hline"></div>
     <p>
-      {% for tag in site.tags %}
-        <a class="btn btn-theme" href="{{ tag.url }}" role="button">{{ tag | first | capitalize }} ({{ tag | last | size }})</a>           
+      {% for category in site.categories %}
+        <a class="btn btn-theme" href="/{{ category | first }}.html" role="button">{{ category | first | capitalize }} ({{ category | last | size }})</a>           
       {% endfor %}
     </p>
     <div class="spacing"></div>
@@ -20,12 +20,12 @@
   <section>
     <h4>应用分类</h4>
     <div class="hline"></div>
-    {% for category in site.categories %}
-      <p>
-          <a href="{{ category.url }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
-          <span class="badge badge-theme pull-right">{{ category | last | size }}</span>
-      </p>
-    {% endfor %}
+    {% for tag in site.tags %}
+        <p>
+          <a href="/tag/{{ tag | first }}.html"><i class="fa fa-angle-right"></i> {{ tag | first | capitalize }}</a>
+          <span class="badge badge-theme pull-right">{{ tag | last | size }}</span>
+        </p>           
+      {% endfor %}
     <div class="spacing"></div>
   </section>
 

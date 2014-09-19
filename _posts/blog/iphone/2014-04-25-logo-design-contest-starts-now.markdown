@@ -3,8 +3,8 @@ layout: post
 title: "Logo design contest starts now"
 date: 2014-04-25 16:54:46
 author: Admin
-categories: Code-Snippets
-tags: iphone
+categories: iphone 
+tags: hh
 img: post03.jpg
 thumb: thumb03.jpg
 ---
