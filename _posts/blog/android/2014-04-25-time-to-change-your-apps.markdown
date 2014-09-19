@@ -4,7 +4,7 @@ title: "Time to change your apps"
 date: 2014-04-25 16:54:46
 author: Admin
 categories: android 
-tags: hi
+tags: 财务
 img: post01.jpg
 thumb: thumb01.jpg
 ---
