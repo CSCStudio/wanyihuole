@@ -11,7 +11,7 @@
     <div class="hline"></div>
     <p>
       {% for category in site.categories %}
-        <a class="btn btn-theme" href="/{{ category | first }}.html" role="button">{{ category | first | capitalize }} ({{ category | last | size }})</a>           
+        <a class="btn btn-theme" href="/{{ category | first }}" role="button">{{ category | first | capitalize }} ({{ category | last | size }})</a>           
       {% endfor %}
     </p>
     <div class="spacing"></div>
@@ -22,7 +22,7 @@
     <div class="hline"></div>
     {% for tag in site.tags %}
         <p>
-          <a href="/tag/{{ tag | first }}.html"><i class="fa fa-angle-right"></i> {{ tag | first | capitalize }}</a>
+          <a href="/tag/{{ tag | first }}"><i class="fa fa-angle-right"></i> {{ tag | first | capitalize }}</a>
           <span class="badge badge-theme pull-right">{{ tag | last | size }}</span>
         </p>           
       {% endfor %}
